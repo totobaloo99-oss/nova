@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOVA</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #090b14;
+  color: #ffffff;
+}
+
+header {
+  padding: 22px;
+  background: #101426;
+  border-bottom: 1px solid #242a42;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: #8d79ff;
+}
+
+.subtitle {
+  color: #8e95ae;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+main {
+  padding: 18px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.welcome {
+  padding: 24px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #201c48, #111629);
+  margin-bottom: 20px;
+}
+
+.welcome h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.welcome p {
+  color: #b6b5d4;
+  font-size: 14px;
+}
+
+.section-title {
+  margin: 22px 0 12px;
+  font-size: 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.card {
+  background: #141829;
+  border: 1px solid #272e47;
+  padding: 18px;
+  border-radius: 16px;
+  min-height: 110px;
+}
+
+.card .icon {
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.card p {
+  color: #929bb5;
+  font-size: 12px;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #101426;
+  border-top: 1px solid #272e47;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 5px;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: #9ba4bf;
+  font-size: 11px;
+}
+
+nav button span {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+nav button.active {
+  color: #9a86ff;
+}
+
+footer {
+  height: 90px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">NOVA</div>
+  <div class="subtitle">Une nouvelle dimension communautaire</div>
+</header>
+
+<main id="content">
+
+  <section class="welcome">
+    <h1>Bienvenue sur NOVA ✨</h1>
+    <p>Explore, partage et découvre ton univers communautaire.</p>
+  </section>
+
+  <h2 class="section-title">Ton univers</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="icon">🏠</div>
+      <h3>Salles</h3>
+      <p>Découvre les espaces communautaires.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">✨</div>
+      <h3>AURA</h3>
+      <p>Ton univers et ta progression.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🎁</div>
+      <h3>Boutique</h3>
+      <p>Découvre les objets de NOVA.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🚀</div>
+      <h3>Canons</h3>
+      <p>Retrouve les événements.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🤝</div>
+      <h3>Relations</h3>
+      <p>Construis ton univers social.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🏆</div>
+      <h3> Missions</h3>
+      <p>Découvre les défis de NOVA.</p>
+    </div>
+
+  </div>
+
+  <footer></footer>
+
+</main>
+
+<nav>
+  <button class="active"><span>🏠</span>Accueil</button>
+  <button><span>👥</span>Salles</button>
+  <button><span>✨</span>AURA</button>
+  <button><span>🎁</span>Boutique</button>
+  <button><span>👤</span>Profil</button>
+</nav>
+
+</body>
+</html>
